@@ -1,0 +1,148 @@
+body {
+    font-family: monospace;
+    line-height: 1.6;
+    color: #3C5B6F;
+    background-color: #f9f9f9;
+}
+    
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #3C5B6F;
+    color: #fff;
+}
+    
+header .logo img{
+    width: 75px;
+    height: 75px;
+}
+    
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+    
+header nav ul li {
+    margin: 0 15px;
+}
+    
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+    
+header nav ul li a:hover {
+    color: #8EA3A6;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown .dropbtn {
+    font-size: 13px;
+    border: none;
+    outline: none;
+    color: #fff; 
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+    cursor: pointer;
+    font-family: monospace; 
+}
+.dropdown-content {
+    display: none;
+    position: absolute; 
+    background-color: #3C5B6F;
+    min-width: 160px;
+    z-index: 1; 
+}
+
+.dropdown-content a {
+    font-size: 13px;
+    color: #fff; 
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; 
+    text-align: left; 
+    font-family: monospace;
+}
+.dropdown-content a:hover {
+    background-color: #8EA3A6;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn:hover{
+    background-color: #8EA3A6; 
+}
+
+.dropbtn i{
+    padding: 10px;
+}
+    
+.articles {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article h2 {
+    color: #3C5B6F;
+    text-align: center;
+}
+
+article p {
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #5A72A0;
+}
+
+.inline-image {
+    float: left;
+    width: 300px;
+    height: auto;
+    margin: 0 15px 10px 0px;
+    border-radius: 4px;   
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3C5B6F;
+    color: #fff;
+}
+    
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.articles {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,216 @@
+body {
+    font-family: monospace;
+    line-height: 1.6;
+    color: #3C5B6F;
+    background-color: #f9f9f9;
+}
+
+
+/* navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #3C5B6F;
+    color: #fff;
+}
+    
+header .logo img {
+    width: 75px;
+    height: 75px;
+}
+    
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+    
+header nav ul li {
+    margin: 0 15px;
+}
+    
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+    
+header nav ul li a:hover {
+    color: #8EA3A6;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown .dropbtn {
+    font-size: 13px;
+    border: none;
+    outline: none;
+    color: #fff; 
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+    cursor: pointer;
+    font-family: monospace; 
+}
+.dropdown-content {
+    display: none;
+    position: absolute; 
+    background-color: #3C5B6F;
+    min-width: 160px;
+    z-index: 1; 
+}
+
+.dropdown-content a {
+    font-size: 13px;
+    color: #fff; 
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; 
+    text-align: left; 
+    font-family: monospace;
+}
+.dropdown-content a:hover {
+    background-color: #8EA3A6;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn:hover{
+    background-color: #8EA3A6; 
+}
+
+.dropbtn i{
+    padding: 10px;
+}
+    
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.member img {
+    width: 100%;
+    border-radius: 10px;
+    animation: bounce 2s infinite;
+}
+
+.member img:hover{
+    background-color: #5A72A0;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0); /* Posisi awal */
+    }
+    25% {
+        transform: translateY(-20px); /* Pental pertama */
+    }
+    50% {
+        transform: translateY(0); /* Kembali ke posisi awal */
+    }
+    75% {
+        transform: translateY(-10px); /* Pental kedua */
+    }
+    100% {
+        transform: translateY(0); /* Kembali ke posisi awal */
+    }
+  }
+
+.members h2{
+    text-align: center;
+    font-family: monospace;
+    font-size: 50px;
+}
+
+/* Container styling */
+.moving-text-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Moving text animation */
+.moving-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3C5B6F;
+    animation: moveText 3s infinite;
+}
+
+/* Keyframes for text movement (horizontal) */
+@keyframes moveText {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Join Fanclub Section */
+.contact {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    background-color: #5A72A0;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3C5B6F;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3C5B6F;
+    color: #fff;
+  }
+    
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
